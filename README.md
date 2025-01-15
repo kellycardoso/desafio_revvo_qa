@@ -78,19 +78,6 @@ npx cypress run
   
 ---
 
-## Geração de Dados Aleatórios
-Utilizamos `faker-js` para criar valores dinâmicos durante os testes, como nomes de cursos ou identificadores únicos.
-
-Exemplo:
-```javascript
-import { faker } from "@faker-js/faker";
-
-const courseName = `Curso ${faker.company.name()}`;
-const courseId = faker.random.numeric(6);
-```
-
----
-
 ## Prints de Evidência
 Os prints de evidência são gerados automaticamente e salvos em:
 ```
@@ -101,16 +88,6 @@ Para capturar prints durante os testes:
 ```javascript
 cy.screenshot('nome-arquivo');
 ```
-
----
-
-## Contribuindo
-
-1. Faça um fork do projeto.
-2. Crie uma branch para a sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`).
-4. Faça push para a branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
 
 ---
 
